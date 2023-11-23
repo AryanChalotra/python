@@ -1,0 +1,24 @@
+def loan_rep(loan_amount,installment):
+        pin = int(input("Please enter your PIN:"))
+        if(pin == 2003):
+            print()
+            print("Processing...")
+            print()
+            print("Payment Successfull!")
+            outst = loan_amount - installment
+            print(f"Done, Your updated outstanding balance is {outst}")
+        else:
+            print("Invalid Pin! Retry")
+
+
+
+
+print("***** WELCOME TO OUR LOAN REPAYMENT SYSTEM *****")
+loan_id = str(input("Please enter your loan id:"))        #Enter this id - 2723MDL2123
+if(loan_id == '2723MDL2123'):
+    loan_amount = 50000
+    tenure = 5
+    installment = loan_amount/tenure
+    loan_rep(loan_amount,installment)
+else:
+    print("Invalid loan ID!")
