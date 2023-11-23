@@ -1,4 +1,3 @@
-
 a=5
 print("Type of a:",type(a))
 b=5.0
